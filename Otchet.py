@@ -42,8 +42,8 @@ class Otchet(object):
 
         dt=datetime.now().strftime('%d.%m.%Y')
 
-        path1 = 'G:\\TeplovyeTrubki\\Godnost_radiatora — копия.xlsx'
-        path2 = 'G:\\TeplovyeTrubki\\Godnost_radiatora — '+zN+' '+dt+'.xlsx'
+        path1 = 'G:\\Godnost_radiatora — копия.xlsx'
+        path2 = 'G:\\Godnost_radiatora — '+zN+' '+dt+'.xlsx'
 
         Otchet.sozdatXl(path1, path2)
 
@@ -97,7 +97,7 @@ class Otchet(object):
           dt = datetime.now().strftime('%d.%m.%Y')
 
           path1 = 'G:\\Godnost_teplovoy_trubki — копия.xlsx'
-          path2 = 'G:\\TeplovyeTrubki\\Godnost_teplovoy_trubki — ' + zN + ' ' + dt + '.xlsx'
+          path2 = 'G:\\Godnost_teplovoy_trubki — ' + zN + ' ' + dt + '.xlsx'
 
           Otchet.sozdatXl(path1, path2)
 
@@ -119,7 +119,7 @@ class Otchet(object):
 
           if s=="А":
             b3.value = "предъявительских испытаний тепловой трубки зав. № " + zN
-            c46.value = " тепловой трубки МВЦА.25006.00039"
+            c46.value = " тепловой трубки"
 
           else:
             b3.value = "предъявительских испытаний тепловой трубки зав. № " + zN
